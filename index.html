@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WoW Forever – Talentrechner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="page-head">
+    <img class="hero-icon" id="heroIcon" src="https://wow.zamimg.com/images/wow/icons/medium/class_warrior.jpg" alt="">
+    <h1>WoW Forever – Talentrechner</h1>
+  </header>
+  <p class="subtitle">Planer auf Classic-Basis (51 Punkte, 3 Talentbäume, alle 9 Klassen). Blizzard hat die endgültigen Forever-Talentbäume noch nicht veröffentlicht – Werte und Talentnamen sind eine Annäherung an die Classic-Era-Daten und sollten aktualisiert werden, sobald offizielle Zahlen vorliegen.</p>
+
+  <div class="summary-bar">
+    <span class="stat">Stufe <b id="levelOut">10</b></span>
+    <span class="stat"><b id="spentOut">0</b> / 51 Punkte verteilt</span>
+    <span class="spacer"></span>
+    <button class="btn" id="copyLinkBtn">Build-Link kopieren</button>
+    <button class="btn danger" id="resetAllBtn">Alles zurücksetzen</button>
+  </div>
+
+  <div class="class-picker" id="classPicker"></div>
+  <div class="trees-grid" id="treesGrid"></div>
+
+  <footer>Inoffizieller Fan-Talentrechner · Namen und Werte sind eine Classic-Annäherung, keine offiziellen WoW&nbsp;Forever-Daten. Klassen-Icons &copy; Blizzard Entertainment, geladen von wow.zamimg.com.</footer>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
